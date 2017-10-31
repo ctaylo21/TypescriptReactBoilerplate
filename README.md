@@ -3,10 +3,10 @@ A boilerplate for writing  modules in ES6.
 
 ## Usage
 
-1. Shallow-clone the repository
+1. Clone the repository into your "new-module" directory
 
   ```bash
-  $ git clone --depth=1 --branch=master git@github.com:ctaylo21/es6-module-boilerplate.git
+  $ https://github.com/ctaylo21/es6-module-boilerplate.git new-module
   ```
 
 2. Rename, and then change into the directory
