@@ -1,0 +1,3 @@
+--colors
+test/**/*Spec.js
+--recursive
