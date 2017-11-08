@@ -1,3 +1,4 @@
 --colors
 test/**/*Spec.js
 --recursive
+--webpack-config webpack/base.js
