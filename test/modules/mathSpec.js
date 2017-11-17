@@ -2,6 +2,7 @@ import {sum, product} from '../../src/modules/math';
 import {assert} from 'chai';
 
 describe('module/math', () => {
+  'use strict';
 
   it('should properly calculate sum', () => {
     assert.strictEqual(sum(3, 7), 10, 'should have summed values');
