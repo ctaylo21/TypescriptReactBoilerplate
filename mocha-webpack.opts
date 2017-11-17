@@ -1,4 +1,5 @@
 --colors
+-r jsdom-global/register
 test/**/*Spec.js
 --recursive
 --webpack-config webpack/base.js
