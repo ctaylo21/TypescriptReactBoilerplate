@@ -7,5 +7,6 @@
   "latedef": true,
   "undef": true,
   "mocha": true,
-  "browser" : true
+  "browser" : true,
+  "node": true
 }
