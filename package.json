@@ -20,9 +20,10 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "build:prod": "webpack -p --config webpack/base.js",
     "test": "NODE_ENV=test ./node_modules/nyc/bin/nyc.js mocha-webpack",
     "tdd": "mocha-webpack --watch",
-    "web": "./node_modules/webpack/bin/webpack.js --config webpack/test-web.js test/**/*Spec.js dist/test/test-bundle.js"
+    "build:dev": "webpack.js --config webpack/dev.js test/**/*Spec.js dist/test/test-bundle.js"
   },
   "nyc": {
     "reporter": [
@@ -47,7 +48,9 @@
     "nyc": "^11.2.1",
     "path": "^0.12.7",
     "sinon": "^4.0.2",
-    "webpack": "^3.8.1"
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "webpack": "^3.8.1",
+    "webpack-merge": "^4.1.1"
   },
   "dependencies": {}
 }
