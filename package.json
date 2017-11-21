@@ -21,9 +21,10 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack -p --config webpack/base.js",
+    "build:dev": "webpack --config webpack/dev.js",
+    "build:test": "./node_modules/webpack/bin/webpack.js test/**/*Spec.js dist/test-bundle.js",
     "test": "NODE_ENV=test ./node_modules/nyc/bin/nyc.js mocha-webpack",
-    "tdd": "mocha-webpack --watch",
-    "build:dev": "webpack.js --config webpack/dev.js test/**/*Spec.js dist/test/test-bundle.js"
+    "tdd": "mocha-webpack --watch"
   },
   "nyc": {
     "reporter": [
