@@ -25,7 +25,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'ES6 modules and Webpack Starter Kit'
+      title: 'ES6 modules and Webpack Starter Kit',
+      template: path.resolve(__dirname, '../src/templates/index.html')
     })
   ]
 };
