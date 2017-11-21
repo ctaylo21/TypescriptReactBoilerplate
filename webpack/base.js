@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/app.js'),
@@ -21,5 +22,10 @@ module.exports = {
         }
       },
     ],
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'ES6 modules and Webpack Starter Kit'
+    })
+  ]
 };
