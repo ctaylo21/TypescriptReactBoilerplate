@@ -20,6 +20,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --open --config webpack/dev.js",
     "build:prod": "webpack -p --config webpack/base.js",
     "build:dev": "webpack --config webpack/dev.js",
     "build:test": "./node_modules/webpack/bin/webpack.js test/**/*Spec.js dist/test-bundle.js",
@@ -53,6 +54,7 @@
     "sinon": "^4.0.2",
     "uglifyjs-webpack-plugin": "^1.1.0",
     "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {}
