@@ -1,5 +1,5 @@
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/app.js'),
@@ -16,16 +16,21 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              ['env', {'modules': false}]
+              ['env', {
+                'targets': {
+                  'browsers': ['last 2 versions']
+                },
+                'modules': false
+              }]
             ]
           }
         }
-      },
-    ],
+      }
+    ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist'], {
       root: path.resolve(__dirname, '../')
     })
   ]
-};
+}

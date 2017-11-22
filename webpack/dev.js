@@ -1,8 +1,8 @@
-const path = require('path');
-const merge = require('webpack-merge');
-const common = require('./base.js');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+const path = require('path')
+const merge = require('webpack-merge')
+const common = require('./base.js')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
@@ -18,4 +18,4 @@ module.exports = merge(common, {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
-});
+})
