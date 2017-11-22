@@ -95,3 +95,7 @@ The supported `npm` commands will watch your source and automatically reload you
     ```
 
 5. Start coding!
+
+## Support
+
+If you find any problems or bugs, please open a new [issue](https://github.com/ctaylo21/JumpStart/issues).
