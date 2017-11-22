@@ -1,3 +1,18 @@
+
+<div align="center">
+  <!-- PR's Welcome -->
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"
+      alt="PR's Welcome" />
+  </a>
+
+  <!-- Standard -->
+  <a href="https://standardjs.com">
+    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
+      alt="Standard" />
+  </a>
+</div>
+
 <h1 align="center">JumpStart</h1>
 
 <div align="center">
@@ -6,8 +21,6 @@
 <div align="center">
   An ES6 module starter kit with everything you need, and nothing you don't.
 </div>
-
-<br />
 
 ## Table of Contents
 - [Features](#features)
@@ -20,7 +33,7 @@
 - __testable:__ built for TDD with hot-reloading, code coverage, and testing with [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Sinon](http://sinonjs.org), and [Istanbul](https://github.com/gotwarlost/istanbul)
 - __isomorphic__: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
 - __compatible__: write cutting-edge javascript and [Babel](https://babeljs.io/) will compile it for browsers
-- __consistent__: uses [Jshint](http://jshint.com/) to detect syntax or style errors in your code
+- __consistent__: uses [standardjs](https://standardjs.com/) to detect syntax or style errors in your code
 - __extendable__: built on [webpack](https://webpack.js.org/) and ready to be tailored to your needs
 
 ## Philosophy
@@ -58,7 +71,8 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm test`
 
-    - runs mocha tests and code coverage and outputs the results. Doesn't watch files or hot-reload.
+    - runs mocha tests, standardjs linting, and code coverage and outputs the results. 
+    - Doesn't watch files or hot-reload.
 
 - `npm build`
     
