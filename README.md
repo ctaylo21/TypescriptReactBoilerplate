@@ -72,26 +72,26 @@ The supported `npm` commands will watch your source and automatically reload you
 
 1. Clone the repository into your "new-module" directory
 
-  ```bash
-  $ https://github.com/ctaylo21/es6-module-boilerplate.git new-module && cd new-module
-  ```
+    ```bash
+    git clone https://github.com/ctaylo21/es6-module-boilerplate.git new-module && cd new-module
+    ```
 
 2. Remove the git repository, and then initialize a new one
 
-  ```bash
-  $ rm -rf .git && git init
-  ```
+    ```bash
+    rm -rf .git && git init
+    ```
 
 3. Remove README and replace with your own
 
-  ```bash
-  $ rm README.md && touch README.md
-  ```
+    ```bash
+    rm README.md && touch README.md
+    ```
 
 4. Update `package.json` and install dependencies
 
-  ```bash
-  $ npm init && npm install
-  ```
+    ```bash
+    npm init && npm install
+    ```
 
 5. Start coding!
