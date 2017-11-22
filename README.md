@@ -29,11 +29,11 @@ JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-dr
 Writing tests should be easy, and you should be able to run them in any environment. 
 Write a test, see it fail, write the code to make it pass, then rinse and repeat.
 
-Are you at terminal warrior? Jumpstart has you covered. Even if you testing DOM functionality, you'll never have to leave the command line.
+Are you at terminal warrior? JumpStart has you covered. Even if you are testing DOM functionality, you'll never have to leave the command line.
 
-Do you want to verify your tests work in the browser? That's supported out of the box.  
+Do you want to verify your tests work in the browser? That's also supported out of the box.  
 
-The supported `npm` commands will watch your source and automatically reload your tests so feedback is __automatic__ and __fast__.
+The provided `npm` commands will watch your source and automatically reload your tests so feedback is __automatic__ and __fast__, just like it should be.
 
 ## Usage
 
