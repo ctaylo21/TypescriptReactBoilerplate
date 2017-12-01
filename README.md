@@ -107,6 +107,8 @@ The provided `npm` commands will watch your source and automatically reload your
     ```bash
     npm init && npm install
     ```
+    
+    Don't forget to update the description any URL's in the `package.json` file.
 
 5. Start coding!
 
