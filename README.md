@@ -61,9 +61,8 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm run tdd:web`
 
-    - builds mocha tests into a bundle that can then be run from the browser
-    - just open up `test/test.html` in your browser to see the results
-    - if any file changes occur, this will hot-reload and re-build the bundle. Refresh the `test.html` page to see the updated results.
+    - builds and opens webpage via `webpack-dev-server` that runs mocha tests in browser
+    - rebuilds and re-runs tests if any relevant files change
     
     <p align="center">
       <img width="400px" src="https://i.imgur.com/vyWp0t5.png">
@@ -76,7 +75,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm build`
     
-    - builds your app for production with both ugilification and minification
+    - builds your app bundle for production with both ugilification and minification
 
 - `npm start`
 
