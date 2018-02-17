@@ -17,7 +17,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'ES6 modules and Webpack Starter Kit',
+      title: 'Jumpstart',
       template: path.resolve(__dirname, '../src/templates/index.html')
     }),
     new webpack.NamedModulesPlugin(),

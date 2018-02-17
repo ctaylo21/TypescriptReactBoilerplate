@@ -1,4 +1,5 @@
 import {sum, product} from './modules/math'
+import './styles/app.scss'
 
 const resultSum = document.getElementById('resultSum')
 const resultProduct = document.getElementById('resultProduct')

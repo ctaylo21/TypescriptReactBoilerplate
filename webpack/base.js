@@ -1,5 +1,10 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+
+const extractSass = new ExtractTextPlugin({
+  filename: 'app.[contenthash].css'
+})
 
 module.exports = {
   module: {
@@ -20,12 +25,20 @@ module.exports = {
             ]
           }
         }
+      },
+      {
+        test: /\.(s*)css$/,
+        use: extractSass.extract({
+          use: ['css-loader', 'sass-loader'],
+          fallback: 'style-loader'
+        })
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist'], {
       root: path.resolve(__dirname, '../')
-    })
+    }),
+    extractSass
   ]
 }
