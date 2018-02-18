@@ -24,6 +24,7 @@
 
 ## Table of Contents
 - [Features](#features)
+- [Supported Languages and Libraries](#Supported-Languages-and-Libraries)
 - [Philosophy](#philosophy)
 - [Usage](#usage)
 - [Installation](#installation)
@@ -36,7 +37,7 @@
 - __consistent__: uses [standardjs](https://standardjs.com/) to detect syntax or style errors in your code
 - __extendable__: built on [webpack](https://webpack.js.org/) and ready to be tailored to your needs
 
-## Supported Langauges/Libraries
+## Supported Languages and Libraries
 
 - __SASS/CSS__: Supports SASS/CSS being loaded by webpack as JS modules. See the [sass-loader usage section](https://github.com/webpack-contrib/sass-loader#usage) for details on the benefits of doing so.
 - __ES6/ES5__: Both modern and legacy javascript will be compiled to be supported cross-browser via [Babel](https://babeljs.io/).
