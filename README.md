@@ -24,7 +24,7 @@
 
 ## Table of Contents
 - [Features](#features)
-- [Supported Languages and Libraries](#Supported-Languages-and-Libraries)
+- [Supported Languages and Libraries](#supported-languages-and-libraries)
 - [Philosophy](#philosophy)
 - [Usage](#usage)
 - [Installation](#installation)
