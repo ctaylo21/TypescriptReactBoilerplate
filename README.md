@@ -36,6 +36,12 @@
 - __consistent__: uses [standardjs](https://standardjs.com/) to detect syntax or style errors in your code
 - __extendable__: built on [webpack](https://webpack.js.org/) and ready to be tailored to your needs
 
+## Supported Langauges/Libraries
+
+- __SASS/CSS__: Supports SASS/CSS being loaded by webpack as JS modules. See the [sass-loader usage section](https://github.com/webpack-contrib/sass-loader#usage) for details on the benefits of doing so.
+- __ES6/ES5__: Both modern and legacy javascript will be compiled to be supported cross-browser via [Babel](https://babeljs.io/).
+- __HTML__: HTML files are created quickly via the [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) with support for multiple template libraries, minification, and more.
+
 ## Philosophy
 
 JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development). 
