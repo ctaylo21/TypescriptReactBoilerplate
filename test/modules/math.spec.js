@@ -1,14 +1,13 @@
 import {sum, product} from '../../src/modules/math'
-import {assert} from 'chai'
 
 describe('module/math', () => {
   'use strict'
 
   it('should properly calculate sum', () => {
-    assert.strictEqual(sum(3, 7), 10, 'should have summed values')
+    expect(sum(3, 7)).toBe(10)
   })
 
   it('should properly calculate product', () => {
-    assert.strictEqual(product(3, 7), 21, 'should have calculated product')
+    expect(product(3, 7)).toBe(21)
   })
 })

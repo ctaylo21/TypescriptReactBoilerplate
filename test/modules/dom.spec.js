@@ -1,5 +1,3 @@
-import {assert} from 'chai'
-
 describe('module/dom', () => {
   let testDiv
 
@@ -15,6 +13,6 @@ describe('module/dom', () => {
 
   it('should update innerHTML of test div', () => {
     testDiv.innerHTML = 'hello'
-    assert.strictEqual(document.getElementById('domSpec-testDiv').innerHTML, 'hello')
+    expect(document.getElementById('domSpec-testDiv').innerHTML).toBe('hello')
   })
 })

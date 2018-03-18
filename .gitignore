@@ -7,3 +7,6 @@ coverage
 
 # Webpack compiled bundle directory
 dist
+
+# Vim-specific
+.tern-port

@@ -1,7 +1,7 @@
 {
   "name": "jumpstart",
   "version": "0.0.1",
-  "description": "ES6 module starter kit with Webpack, Babel, Mocha, Chai, Sinon, and Istanbul",
+  "description": "ES6 module starter kit with Webpack, Babel, and Jest",
   "repository": {
     "type": "git",
     "url": "https://github.com/ctaylo21/JumpStart.git"
@@ -9,12 +9,9 @@
   "keywords": [
     "es6",
     "javascript",
-    "mocha",
-    "chai",
-    "sinon",
     "webpack",
     "babel",
-    "istanbul",
+    "jest",
     "standardjs"
   ],
   "author": "Caleb Taylor <caleb89taylor@gmail.com",
@@ -23,8 +20,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack/dev.js",
     "build": "webpack -p --config webpack/prod.js",
-    "test": "standard && NODE_ENV=test ./node_modules/nyc/bin/nyc.js mocha-webpack",
-    "tdd": "mocha-webpack --watch",
+    "test": "standard && jest --coverage",
+    "tdd": "jest --watch",
     "tdd:web": "webpack-dev-server --inline --progress --open --config webpack/webTest.js"
   },
   "nyc": {
@@ -39,28 +36,22 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-istanbul": "^4.1.5",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-istanbul": "^4.1.6",
     "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
-    "clean-webpack-plugin": "^0.1.17",
-    "css-loader": "^0.28.9",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
-    "jsdom": "11.3.0",
-    "jsdom-global": "3.0.2",
-    "mocha": "^4.1.0",
-    "mocha-webpack": "^1.0.1",
-    "node-sass": "^4.7.2",
-    "nyc": "^11.4.1",
+    "jest": "^22.4.2",
+    "node-sass": "^4.8.2",
     "path": "^0.12.7",
-    "sass-loader": "^6.0.6",
-    "sinon": "^4.1.6",
+    "sass-loader": "^6.0.7",
     "standard": "^10.0.3",
-    "style-loader": "^0.20.2",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-merge": "^4.1.1"
+    "style-loader": "^0.20.3",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2",
+    "webpack-merge": "^4.1.2"
   },
   "dependencies": {},
   "standard": {
@@ -68,7 +59,8 @@
       "describe",
       "beforeEach",
       "it",
-      "afterEach"
+      "afterEach",
+      "expect"
     ]
   }
 }

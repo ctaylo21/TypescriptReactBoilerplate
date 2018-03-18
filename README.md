@@ -45,23 +45,40 @@
 
 ## Philosophy
 
-JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development). 
-Writing tests should be easy, and you should be able to run them in any environment. 
+JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
+Writing tests should be easy, and you should be able to run them in any environment.
 Write a test, see it fail, write the code to make it pass, then rinse and repeat.
 
 Are you at terminal warrior? JumpStart has you covered. Even if you are testing DOM functionality, you'll never have to leave the command line.
 
-Do you want to verify your tests work in the browser? That's also supported out of the box.  
+Do you want to verify your tests work in the browser? That's also supported out of the box.
 
 The provided `npm` commands will watch your source and automatically reload your tests so feedback is __automatic__ and __fast__, just like it should be.
 
+## Installation
+
+1. Install [watchman](https://facebook.github.io/watchman/docs/install.html)
+
+  ```
+  npm r -g watchman
+  brew install watchman
+  ```
+
+  **Note:** This may not be required if no errors occur when running `npm run tdd`. It is likely OS-specific.
+
+2. Install project dependencies
+
+  ```
+  npm install
+  ```
+
 ## Usage
 
-- `npm run tdd` 
+- `npm run tdd`
 
     - runs mocha tests in `watch` mode so your tests get re-run when the source or tests change.
     - uses [mocha-webpack](https://www.npmjs.com/package/mocha-webpack), so only the tests that are affected by file changes will get run
-    
+
     <p align="center">
       <img src="https://media.giphy.com/media/3ohs82WbHWookAhx16/giphy.gif">
     </p>
@@ -70,18 +87,18 @@ The provided `npm` commands will watch your source and automatically reload your
 
     - builds and opens webpage via `webpack-dev-server` that runs mocha tests in browser
     - rebuilds and re-runs tests if any relevant files change
-    
+
     <p align="center">
       <img width="400px" src="https://i.imgur.com/vyWp0t5.png">
     </p>
 
 - `npm test`
 
-    - runs mocha tests, standardjs linting, and code coverage and outputs the results. 
+    - runs mocha tests, standardjs linting, and code coverage and outputs the results.
     - Doesn't watch files or hot-reload.
 
 - `npm build`
-    
+
     - builds your app bundle for production with both ugilification and minification
 
 - `npm start`
@@ -113,7 +130,7 @@ The provided `npm` commands will watch your source and automatically reload your
     ```bash
     npm init && npm install
     ```
-    
+
     Don't forget to update the description any URL's in the `package.json` file.
 
 5. Start coding!
