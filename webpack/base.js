@@ -15,14 +15,23 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
+            // babelrc: false, TODO: Adding this breaks mocha-webpack's watch
             presets: [
               ['env', {
-                'targets': {
-                  'browsers': ['last 2 versions']
+                targets: {
+                  browsers: [
+                    'last 2 versions',
+                    'not IE <= 10'
+                  ]
                 },
-                'modules': false
+                modules: false
               }]
-            ]
+            ],
+            env: {
+              'test': {
+                'plugins': ['istanbul']
+              }
+            }
           }
         }
       },
