@@ -7,6 +7,7 @@ const extractSass = new ExtractTextPlugin({
 })
 
 module.exports = {
+  mode: 'development',
   module: {
     rules: [
       {
@@ -17,7 +18,7 @@ module.exports = {
           options: {
             // babelrc: false, TODO: Adding this breaks mocha-webpack's watch
             presets: [
-              ['env', {
+              ['@babel/env', {
                 targets: {
                   browsers: [
                     'last 2 versions',
