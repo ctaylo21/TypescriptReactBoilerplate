@@ -45,23 +45,23 @@
 
 ## Philosophy
 
-JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development). 
-Writing tests should be easy, and you should be able to run them in any environment. 
+JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
+Writing tests should be easy, and you should be able to run them in any environment.
 Write a test, see it fail, write the code to make it pass, then rinse and repeat.
 
 Are you at terminal warrior? JumpStart has you covered. Even if you are testing DOM functionality, you'll never have to leave the command line.
 
-Do you want to verify your tests work in the browser? That's also supported out of the box.  
+Do you want to verify your tests work in the browser? That's also supported out of the box.
 
 The provided `npm` commands will watch your source and automatically reload your tests so feedback is __automatic__ and __fast__, just like it should be.
 
 ## Usage
 
-- `npm run tdd` 
+- `npm run tdd`
 
     - runs mocha tests in the terminal using [mocha-webpack](https://www.npmjs.com/package/mocha-webpack)
     - Includes improved `watch` mode so only the tests that are affected by file changes will get run
-    
+
     <p align="center">
       <img src="https://media.giphy.com/media/3ohs82WbHWookAhx16/giphy.gif">
     </p>
@@ -71,7 +71,7 @@ The provided `npm` commands will watch your source and automatically reload your
     - builds and opens webpage via `webpack-dev-server` that runs mocha tests in browser
     - rebuilds and re-runs tests if any relevant files change
     - Runs webpack with `eval` style source mapping to allow debugging of actual generated code.
-    
+
     <p align="center">
       <img width="400px" src="https://i.imgur.com/vyWp0t5.png">
     </p>
@@ -81,8 +81,12 @@ The provided `npm` commands will watch your source and automatically reload your
     - runs mocha tests, standardjs linting, and code coverage and outputs the results
     - Doesn't watch files or hot-reload
 
+    <p align="center">
+      <img width="400px" src="https://i.imgur.com/o1fPDAi.png">
+    </p>
+
 - `npm run build`
-    
+
     - builds your app bundle for production using webpack's `production` mode. Read more [here](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
     - includes minification, uglification, tree-shaking, module concatentation, chunk splitting, and more
 
@@ -116,7 +120,7 @@ The provided `npm` commands will watch your source and automatically reload your
     ```bash
     npm init && npm install
     ```
-    
+
     Don't forget to update the description any URL's in the `package.json` file.
 
 5. Start coding!
