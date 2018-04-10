@@ -3,7 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const extractSass = new ExtractTextPlugin({
-  filename: 'app.[contenthash].css'
+  filename: 'app.[md5:contenthash:hex:20].css'
 })
 
 module.exports = {
