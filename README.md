@@ -19,7 +19,7 @@
   <strong>Write Code, Not Config</strong>
 </div>
 <div align="center">
-  An ES6 module starter kit with everything you need, and nothing you don't.
+  An ES6 module starter kit built on Webpack 4 and Babel 7
 </div>
 
 ## Table of Contents
@@ -31,16 +31,16 @@
 - [Support](#support)
 
 ## Features
-- __testable:__ built for TDD with hot-reloading, code coverage, and testing with [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Sinon](http://sinonjs.org), and [Istanbul](https://github.com/gotwarlost/istanbul)
+- __powerful__: [Webpack 4](https://webpack.js.org/) provides code-splitting, lazy loading, tree shaking, production/development modes, cross-language bundle support, caching, customizable loaders, and much more
+- __testable__: built for TDD with hot-reloading, code coverage, and testing with [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Sinon](http://sinonjs.org), and [Istanbul](https://github.com/gotwarlost/istanbul)
 - __isomorphic__: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
-- __compatible__: write cutting-edge javascript and [Babel](https://babeljs.io/) will compile it for browsers
+- __compatible__: write cutting-edge javascript and [Babel](https://babeljs.io/) will compile it to a version that older browsers support
 - __consistent__: uses [standardjs](https://standardjs.com/) to detect syntax or style errors in your code
-- __extendable__: built on [webpack](https://webpack.js.org/) and ready to be tailored to your needs
 
 ## Supported Languages and Libraries
 
 - __SASS/CSS__: Supports SASS/CSS being loaded by webpack as JS modules. See the [sass-loader usage section](https://github.com/webpack-contrib/sass-loader#usage) for details on the benefits of doing so.
-- __ES6/ES5__: Both modern and legacy javascript will be compiled to be supported cross-browser via [Babel](https://babeljs.io/).
+- __ES6/ES5__: Both modern and legacy javascript will be supported across relevant browsers via [Babel](https://babeljs.io/).
 - __HTML__: HTML files are created quickly via the [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) with support for multiple template libraries, minification, and more.
 
 ## Philosophy
@@ -59,8 +59,8 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm run tdd` 
 
-    - runs mocha tests in `watch` mode so your tests get re-run when the source or tests change.
-    - uses [mocha-webpack](https://www.npmjs.com/package/mocha-webpack), so only the tests that are affected by file changes will get run
+    - runs mocha tests in the terminal using [mocha-webpack](https://www.npmjs.com/package/mocha-webpack)
+    - Includes improved `watch` mode so only the tests that are affected by file changes will get run
     
     <p align="center">
       <img src="https://media.giphy.com/media/3ohs82WbHWookAhx16/giphy.gif">
@@ -70,6 +70,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
     - builds and opens webpage via `webpack-dev-server` that runs mocha tests in browser
     - rebuilds and re-runs tests if any relevant files change
+    - Runs webpack with `eval` style source mapping to allow debugging of actual generated code.
     
     <p align="center">
       <img width="400px" src="https://i.imgur.com/vyWp0t5.png">
@@ -77,16 +78,18 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm test`
 
-    - runs mocha tests, standardjs linting, and code coverage and outputs the results. 
-    - Doesn't watch files or hot-reload.
+    - runs mocha tests, standardjs linting, and code coverage and outputs the results
+    - Doesn't watch files or hot-reload
 
-- `npm build`
+- `npm run build`
     
-    - builds your app bundle for production with both ugilification and minification
+    - builds your app bundle for production using webpack's `production` mode. Read more [here](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
+    - includes minification, uglification, tree-shaking, module concatentation, chunk splitting, and more
 
 - `npm start`
 
     - builds your app in development mode and automatically serves it using `webpack-dev-server` and the template in `src/templates/index.html`
+    - hot-reloading is enabled to automatically rebuild and reload if any source file changes
 
 ## Installation
 
