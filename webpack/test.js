@@ -9,7 +9,7 @@ module.exports = merge(common, {
     filename: 'test.bundle.js',
     path: path.resolve(__dirname, '../dist')
   },
-  devtool: 'inline-source-map',
+  devtool: 'eval',
   devServer: {
     contentBase: [path.resolve(__dirname, '../dist/'), path.resolve(__dirname, '../node_modules/')]
   },
