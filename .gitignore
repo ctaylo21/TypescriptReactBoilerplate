@@ -7,3 +7,7 @@ coverage
 
 # Webpack compiled bundle directory
 dist
+
+# Tern files
+.tern-port
+.tern-project
