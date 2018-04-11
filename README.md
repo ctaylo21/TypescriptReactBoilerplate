@@ -88,7 +88,7 @@ The provided `npm` commands will watch your source and automatically reload your
 - `npm run build`
 
     - builds your app bundle for production using webpack's `production` mode. Read more [here](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
-    - includes minification, uglification, tree-shaking, module concatentation, chunk splitting, and more
+    - includes minification (both CSS and JS), uglification, tree-shaking, module concatentation, chunk splitting, and more
 
 - `npm start`
 

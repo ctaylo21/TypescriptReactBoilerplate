@@ -10,26 +10,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            // babelrc: false, TODO: Adding this breaks mocha-webpack's watch
-            presets: [
-              ['@babel/env', {
-                targets: {
-                  browsers: [
-                    'last 2 versions',
-                    'not IE <= 10'
-                  ]
-                },
-                modules: false
-              }]
-            ],
-            env: {
-              'test': {
-                'plugins': ['istanbul']
-              }
-            }
-          }
+          loader: 'babel-loader'
         }
       },
       {
