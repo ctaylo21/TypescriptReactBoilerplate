@@ -66,7 +66,8 @@
       "describe",
       "beforeEach",
       "it",
-      "afterEach"
+      "afterEach",
+      "assert"
     ]
   }
 }

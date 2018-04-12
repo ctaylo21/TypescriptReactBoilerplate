@@ -1,5 +1,4 @@
 import {sum, product} from '../../src/modules/math'
-import {assert} from 'chai'
 
 describe('module/math', () => {
   'use strict'

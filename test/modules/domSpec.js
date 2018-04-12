@@ -1,5 +1,3 @@
-import {assert} from 'chai'
-
 describe('module/dom', () => {
   let testDiv
 
