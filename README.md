@@ -100,7 +100,7 @@ The provided `npm` commands will watch your source and automatically reload your
 1. Clone the repository into your "new-module" directory
 
     ```bash
-    git clone https://github.com/ctaylo21/es6-module-boilerplate.git new-module && cd new-module
+    git clone https://github.com/ctaylo21/JumpStart.git new-module && cd new-module
     ```
 
 2. Remove the git repository, and then initialize a new one
