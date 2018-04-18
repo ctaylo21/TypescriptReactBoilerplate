@@ -31,4 +31,4 @@ If you have an issue, please [open a new issue](https://github.com/ctaylo21/Jump
 
 ## Code Standards
 
-All code written should conform to [StandardJS](https://standardjs.com/). No errors should be present when `npm run lint`
+All code written should conform to [StandardJS](https://standardjs.com/). No errors should be present after running `npm run lint`
