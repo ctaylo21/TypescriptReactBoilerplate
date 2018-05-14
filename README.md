@@ -68,7 +68,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm run tdd:web`
 
-    - builds and opens webpage via `webpack-dev-server` that runs mocha tests in browser
+    - builds and opens webpage via [webpack-serve](https://github.com/webpack-contrib/webpack-serve) that runs mocha tests in browser
     - rebuilds and re-runs tests if any relevant files change
     - Runs webpack with `eval` style source mapping to allow debugging of actual generated code.
 
@@ -92,7 +92,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm start`
 
-    - builds your app in development mode and automatically serves it using `webpack-dev-server` and the template in `src/templates/index.html`
+    - builds your app in development mode and automatically serves it using [webpack-serve](https://github.com/webpack-contrib/webpack-serve)	 and the template in `src/templates/index.html`
     - hot-reloading is enabled to automatically rebuild and reload if any source file changes
 
 ## Installation
