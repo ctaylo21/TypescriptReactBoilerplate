@@ -26,7 +26,8 @@
     "test": "standard && cross-env NODE_ENV=test ./node_modules/nyc/bin/nyc.js mocha-webpack",
     "tdd": "mocha-webpack --watch",
     "tdd:web": "webpack-serve --open --config webpack/test.js",
-    "lint": "standard"
+    "lint": "standard",
+    "stats": "webpack --progress --config webpack/stats.js"
   },
   "nyc": {
     "sourceMap": false,
@@ -58,6 +59,7 @@
     "sinon": "^4.5.0",
     "standard": "^10.0.3",
     "webpack": "^4.5.0",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^2.0.14",
     "webpack-merge": "^4.1.2",
     "webpack-serve": "^0.3.2"

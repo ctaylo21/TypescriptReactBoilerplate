@@ -95,6 +95,15 @@ The provided `npm` commands will watch your source and automatically reload your
     - builds your app in development mode and automatically serves it using [webpack-serve](https://github.com/webpack-contrib/webpack-serve)	 and the template in `src/templates/index.html`
     - hot-reloading is enabled to automatically rebuild and reload if any source file changes
 
+- `npm run stats`
+
+	- builds your app with production settings and outputs a graph that visualizes your bundle sizes in an interactive, zoomable tree map via the [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
+
+	<p align="center">
+      <img width="400px" src="https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif">
+    </p>
+
+	
 ## Installation
 
 1. Clone the repository into your "new-module" directory
