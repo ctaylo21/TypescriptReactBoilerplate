@@ -72,5 +72,8 @@
       "afterEach",
       "assert"
     ]
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.11.1"
   }
 }
