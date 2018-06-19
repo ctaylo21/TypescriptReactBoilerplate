@@ -11,6 +11,13 @@
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
       alt="Standard" />
   </a>
+
+  <!-- Dependencies -->
+  <a href="https://standardjs.com">
+    <img src="https://david-dm.org/ctaylo21/JumpStart/dev-status.svg"
+      alt="Dependencies" />
+  </a>
+
 </div>
 
 <h1 align="center">JumpStart</h1>
