@@ -1,4 +1,9 @@
-const {assert} = require('chai')
+require('regenerator-runtime/runtime')
 
 // Make common library methods available on global object
-Object.assign(global, {assert})
+let chai = require('chai')
+let chaiAsPromised = require('chai-as-promised')
+chai.use(chaiAsPromised)
+
+global.assert = chai.assert
+global.sinon = require('sinon')

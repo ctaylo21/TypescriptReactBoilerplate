@@ -5,10 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = merge(common, {
-  devServer: {
-    contentBase: path.resolve(__dirname, '../dist/'),
-    hot: true
-  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Jumpstart',

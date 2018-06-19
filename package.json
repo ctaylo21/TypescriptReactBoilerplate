@@ -23,7 +23,7 @@
   "scripts": {
     "start": "webpack-serve --open --config webpack/dev.js",
     "build": "webpack --progress --config webpack/prod.js",
-    "test": "standard && cross-env NODE_ENV=test ./node_modules/nyc/bin/nyc.js mocha-webpack",
+    "test": "cross-env NODE_ENV=test npx nyc mocha-webpack",
     "tdd": "mocha-webpack --watch",
     "tdd:web": "webpack-serve --open --config webpack/test.js",
     "lint": "standard",
@@ -42,6 +42,7 @@
     "babel-loader": "^8.0.0-beta.3",
     "babel-plugin-istanbul": "^4.1.6",
     "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
@@ -70,7 +71,8 @@
       "beforeEach",
       "it",
       "afterEach",
-      "assert"
+      "assert",
+      "sinon"
     ]
   },
   "dependencies": {
