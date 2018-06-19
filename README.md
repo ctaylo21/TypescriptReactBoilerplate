@@ -13,9 +13,8 @@
   </a>
 
   <!-- Dependencies -->
-  <a href="https://standardjs.com">
-    <img src="https://david-dm.org/ctaylo21/JumpStart/dev-status.svg"
-      alt="Dependencies" />
+  <a href="https://david-dm.org/ctaylo21/JumpStart?type=dev" title="devDependencies status">
+    <img src="https://david-dm.org/ctaylo21/JumpStart/dev-status.svg"/>
   </a>
 
 </div>
