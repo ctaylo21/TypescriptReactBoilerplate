@@ -1,5 +1,5 @@
 import 'regenerator-runtime/runtime'
-import {sum, product, doubleAfterDelay} from './modules/math'
+import { sum, product, doubleAfterDelay } from './modules/math'
 import './styles/app.scss'
 
 const resultSum = document.getElementById('resultSum')

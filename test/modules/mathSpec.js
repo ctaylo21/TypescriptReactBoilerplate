@@ -1,4 +1,4 @@
-import {sum, product, doubleAfterDelay} from '../../src/modules/math'
+import { sum, product, doubleAfterDelay } from '../../src/modules/math'
 
 describe('module/math', () => {
   'use strict'
