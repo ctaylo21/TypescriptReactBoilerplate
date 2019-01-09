@@ -1,6 +1,6 @@
 {
   "name": "jumpstart",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ES6 module starter kit with Webpack, Babel, Mocha, Chai, Sinon, and Istanbul",
   "repository": {
     "type": "git",
