@@ -1,7 +1,7 @@
 {
   "name": "jumpstart",
-  "version": "0.0.5",
-  "description": "ES6 module starter kit with Webpack, Babel, Mocha, Chai, Sinon, and Istanbul",
+  "version": "0.0.6",
+  "description": "ES6 module starter kit with Webpack, Babel, Mocha, Chai, Sinon, Sass, and Istanbul",
   "repository": {
     "type": "git",
     "url": "https://github.com/ctaylo21/JumpStart.git"
@@ -43,13 +43,13 @@
     "babel-plugin-istanbul": "^5.1.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "clean-webpack-plugin": "^0.1.19",
+    "clean-webpack-plugin": "^1.0.0",
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.1",
+    "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
-    "jsdom": "12.1.0",
+    "jsdom": "13.1.0",
     "jsdom-global": "3.0.2",
-    "mini-css-extract-plugin": "^0.4.5",
+    "mini-css-extract-plugin": "^0.5.0",
     "mocha": "^5.2.0",
     "mocha-webpack": "^2.0.0-beta.0",
     "node-sass": "^4.11.0",
@@ -57,7 +57,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "path": "^0.12.7",
     "sass-loader": "^7.1.0",
-    "sinon": "^6.3.5",
+    "sinon": "^7.2.2",
     "standard": "^12.0.1",
     "webpack": "^4.28.1",
     "webpack-bundle-analyzer": "^3.0.3",
@@ -76,6 +76,6 @@
     ]
   },
   "dependencies": {
-    "regenerator-runtime": "^0.12.1"
+    "regenerator-runtime": "^0.13.1"
   }
 }
