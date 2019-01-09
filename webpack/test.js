@@ -10,8 +10,8 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, '../dist')
   },
   devtool: 'eval',
-  serve: {
-    content: [path.resolve(__dirname, '../dist/'), path.resolve(__dirname, '../node_modules/')]
+  devServer: {
+    contentBase: [path.resolve(__dirname, '../dist/'), path.resolve(__dirname, '../node_modules/')]
   },
   plugins: [
     new HtmlWebpackPlugin({

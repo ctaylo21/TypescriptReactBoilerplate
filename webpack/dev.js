@@ -10,7 +10,6 @@ module.exports = merge(common, {
       title: 'Jumpstart',
       template: path.resolve(__dirname, '../src/templates/index.html')
     }),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.NamedModulesPlugin()
   ]
 })
