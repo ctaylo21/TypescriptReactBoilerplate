@@ -1,21 +1,25 @@
-const merge = require('webpack-merge')
-const common = require('./base.js')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+/* eslint-disable import/no-extraneous-dependencies */
+const merge = require('webpack-merge');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const common = require('./base.js');
 
 module.exports = merge(common, {
   mode: 'production',
-  devtool: 'source-map',
+  output: {
+    filename: 'main.min.js',
+  },
+  devtool: false,
   plugins: [
     new OptimizeCSSAssetsPlugin({
       cssProcessorOptions: {
         map: {
-          inline: false
+          inline: false,
         },
         discardComments: {
-          removeAll: true
-        }
+          removeAll: true,
+        },
       },
-      canPrint: true
-    })
-  ]
-})
+      canPrint: true,
+    }),
+  ],
+});

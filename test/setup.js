@@ -1,7 +1,8 @@
 // Make common library methods available on global object
-let chai = require('chai')
-let chaiAsPromised = require('chai-as-promised')
-chai.use(chaiAsPromised)
+const chai = require('chai');
+const chaiAsPromised = require('chai-as-promised');
 
-global.assert = chai.assert
-global.sinon = require('sinon')
+chai.use(chaiAsPromised);
+
+global.assert = chai.assert;
+global.sinon = require('sinon');

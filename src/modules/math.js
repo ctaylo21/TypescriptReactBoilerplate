@@ -5,8 +5,8 @@
  * @param {number} b - second number to sum
  * @returns {number} - sum of two numbers
  */
-export function sum (a, b) {
-  return a + b
+export function sum(a, b) {
+  return a + b;
 }
 
 /**
@@ -16,8 +16,8 @@ export function sum (a, b) {
  * @param {number} b - second number to multiply
  * @returns {number} - product of two numbers
  */
-export function product (a, b) {
-  return a * b
+export function product(a, b) {
+  return a * b;
 }
 
 /**
@@ -27,10 +27,10 @@ export function product (a, b) {
  * @param {number} [delay=2000] - time in ms to delay
  * @returns {Promise} - a promise that will resolve to result
  */
-export function doubleAfterDelay (x, delay = 2000) {
-  return new Promise(resolve => {
+export function doubleAfterDelay(x, delay = 2000) {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(x * 2)
-    }, delay)
-  })
+      resolve(x * 2);
+    }, delay);
+  });
 }
