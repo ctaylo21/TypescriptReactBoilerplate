@@ -1,5 +1,3 @@
-require('regenerator-runtime/runtime')
-
 // Make common library methods available on global object
 let chai = require('chai')
 let chaiAsPromised = require('chai-as-promised')
