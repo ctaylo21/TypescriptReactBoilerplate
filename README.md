@@ -6,12 +6,6 @@
       alt="PR's Welcome" />
   </a>
 
-  <!-- Standard -->
-  <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
-      alt="Standard" />
-  </a>
-
   <!-- Dependencies -->
   <a href="https://david-dm.org/ctaylo21/JumpStart?type=dev" title="devDependencies status">
     <img src="https://david-dm.org/ctaylo21/JumpStart/dev-status.svg"/>
@@ -41,7 +35,7 @@
 - __testable__: built for TDD with hot-reloading, code coverage, and testing with [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Sinon](http://sinonjs.org), and [Istanbul](https://github.com/gotwarlost/istanbul)
 - __isomorphic__: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
 - __compatible__: write cutting-edge javascript and [Babel](https://babeljs.io/) will compile it to a version that older browsers support
-- __consistent__: uses [standardjs](https://standardjs.com/) to detect syntax or style errors in your code
+- __consistent__: uses [eslint](https://eslint.org/) to enforce code standards across your project
 
 ## Supported Languages and Libraries
 
@@ -84,7 +78,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm test`
 
-    - runs mocha tests, standardjs linting, and code coverage and outputs the results
+    - runs mocha tests and calculates code coverage and outputs the results
     - Doesn't watch files or hot-reload
 
     <p align="center">
