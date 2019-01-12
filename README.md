@@ -12,8 +12,8 @@
   </a>
 
   <!-- Dependencies -->
-  <a href="https://david-dm.org/ctaylo21/JumpStart?type=dev" title="devDependencies status">
-    <img src="https://david-dm.org/ctaylo21/JumpStart/dev-status.svg"/>
+  <a href="https://david-dm.org/ctaylo21/ModernJSProjectBoilerplate?type=dev" title="devDependencies status">
+    <img src="https://david-dm.org/ctaylo21/ModernJSProjectBoilerplate/dev-status.svg"/>
   </a>
 
 </div>
@@ -58,7 +58,7 @@ This project boilerplate is built on the concept of [TDD](https://en.wikipedia.o
 Writing tests should be easy, and you should be able to run them in any environment.
 Write a test, see it fail, write the code to make it pass, then rinse and repeat.
 
-Are you at terminal warrior? JumpStart has you covered. Even if you are testing DOM functionality, you'll never have to leave the command line.
+Are you at terminal warrior? This project boilerplate has you covered. Even if you are testing DOM functionality, you'll never have to leave the command line.
 
 Do you want to verify your tests work in the browser? That's also supported out of the box.
 
