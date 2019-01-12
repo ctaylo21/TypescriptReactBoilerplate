@@ -6,6 +6,11 @@
       alt="PR's Welcome" />
   </a>
 
+  <!-- Commitizen -->
+  <a href="http://commitizen.github.io/cz-cli/v" title="Commitizen">
+    <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg"/>
+  </a>
+
   <!-- Dependencies -->
   <a href="https://david-dm.org/ctaylo21/JumpStart?type=dev" title="devDependencies status">
     <img src="https://david-dm.org/ctaylo21/JumpStart/dev-status.svg"/>
