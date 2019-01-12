@@ -19,7 +19,7 @@
   <strong>Write Code, Not Config</strong>
 </div>
 <div align="center">
-  An ES6 module starter kit built on Webpack 4 and Babel 7
+  Cutting-edge JavaScript project boilerplate built on Webpack 4 and Babel 7
 </div>
 
 ## Table of Contents
@@ -106,10 +106,10 @@ The provided `npm` commands will watch your source and automatically reload your
 	
 ## Installation
 
-1. Clone the repository into your "new-module" directory
+1. Clone the repository into your "new-project" directory
 
     ```bash
-    git clone https://github.com/ctaylo21/JumpStart.git new-module && cd new-module
+    git clone https://github.com/ctaylo21/JumpStart.git new-project && cd new-project
     ```
 
 2. Remove the git repository, and then initialize a new one
