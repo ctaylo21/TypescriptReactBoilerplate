@@ -2,6 +2,27 @@
 
 Want to contribute? Great! Here's a quick guide to get started.
 
+## Git Commits
+This project uses [commitzen](https://github.com/commitizen/cz-cli) to ensure a consistent git commit message standard. 
+When you are ready to commit code, use the command:
+
+```
+npm run cm
+```
+
+Now just follow the prompts commit your code. The description of the change should follow these standards:
+
+  - use the imperative, present tense: "change" not "changed" nor "changes"
+  - don't capitalize the first letter
+  - no dot (.) at the end
+
+**Important:** If your commit fails (i.e. from a `pre-commit` hook), you can re-commit without having to re-enter all of your
+previous choices by running:
+
+```
+npm run cm -- --retry
+```
+
 ## Submitting a Pull Request
 
 Please use the [Github Flow](https://guides.github.com/introduction/flow/index.html) for any code changes. The typical process will be the following:
@@ -31,4 +52,6 @@ If you have an issue, please [open a new issue](https://github.com/ctaylo21/Jump
 
 ## Code Standards
 
-All code written should conform to [StandardJS](https://standardjs.com/). No errors should be present after running `npm run lint`
+All code written should conform to [eslint](https://eslint.org/). No errors should be present after running `npm run lint`. All commited `*.js` files
+are automatically linted on commits to ensure they adhere to project standards.
+

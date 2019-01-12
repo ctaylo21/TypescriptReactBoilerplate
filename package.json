@@ -25,6 +25,7 @@
     "build": "webpack --progress --config webpack/prod.js",
     "test": "cross-env NODE_ENV=test npx nyc mocha-webpack",
     "precommit": "lint-staged",
+    "cm": "git-cz",
     "tdd": "mocha-webpack --watch",
     "tdd:web": "webpack-dev-server --open --config webpack/test.js",
     "lint": "eslint ./src",
@@ -52,8 +53,10 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "clean-webpack-plugin": "^1.0.0",
+    "commitizen": "^3.0.5",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -73,7 +76,6 @@
     "path": "^0.12.7",
     "sass-loader": "^7.1.0",
     "sinon": "^7.2.2",
-    "standard": "^12.0.1",
     "webpack": "^4.28.1",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.2.1",
@@ -82,5 +84,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

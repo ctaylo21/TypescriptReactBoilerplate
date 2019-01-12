@@ -23,9 +23,12 @@
 </div>
 
 ## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Features](#features)
 - [Supported Languages and Libraries](#supported-languages-and-libraries)
 - [Philosophy](#philosophy)
+  - [TDD](#tdd)
+  - [Best Practices](#best-practices)
 - [Usage](#usage)
 - [Installation](#installation)
 - [Support](#support)
@@ -35,7 +38,7 @@
 - __testable__: built for TDD with hot-reloading, code coverage, and testing with [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Sinon](http://sinonjs.org), and [Istanbul](https://github.com/gotwarlost/istanbul)
 - __isomorphic__: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
 - __compatible__: write cutting-edge javascript and [Babel](https://babeljs.io/) will compile it to a version that older browsers support
-- __consistent__: uses [eslint](https://eslint.org/) to enforce code standards across your project
+- __consistent__: uses [eslint](https://eslint.org/) to enforce code standards, and [commitzen](https://github.com/commitizen/cz-cli) to enforce `git commit` standards
 
 ## Supported Languages and Libraries
 
@@ -62,6 +65,7 @@ All the best practices for a project should be available from the beginning of y
 Some examples of these feature include:
 - Automated linting of files on git commit via [lint-staged](https://www.npmjs.com/package/lint-staged)
 - Hot reloading of source code for both tests and application code via [webpack](https://webpack.js.org/) and [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+- Standardized commit messages via [commitizen](https://github.com/commitizen/cz-cli)
 
 ## Usage
 
