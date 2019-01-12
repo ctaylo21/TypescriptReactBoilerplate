@@ -13,7 +13,7 @@
 
 </div>
 
-<h1 align="center">JumpStart</h1>
+<h1 align="center">Modern JS Project Boilerplate</h1>
 
 <div align="center">
   <strong>Write Code, Not Config</strong>
@@ -45,7 +45,8 @@
 
 ## Philosophy
 
-JumpStart is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
+### TDD
+This project boilerplate is built on the concept of [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
 Writing tests should be easy, and you should be able to run them in any environment.
 Write a test, see it fail, write the code to make it pass, then rinse and repeat.
 
@@ -54,6 +55,13 @@ Are you at terminal warrior? JumpStart has you covered. Even if you are testing 
 Do you want to verify your tests work in the browser? That's also supported out of the box.
 
 The provided `npm` commands will watch your source and automatically reload your tests so feedback is __automatic__ and __fast__, just like it should be.
+
+### Best Practices
+All the best practices for a project should be available from the beginning of your project. This boilerplate is constantly updated to include some of the best tools and libraries to ensure your JavaScript project is professional-grade.
+
+Some examples of these feature include:
+- Automated linting of files on git commit via [lint-staged](https://www.npmjs.com/package/lint-staged)
+- Hot reloading of source code for both tests and application code via [webpack](https://webpack.js.org/) and [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 
 ## Usage
 
@@ -68,7 +76,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm run tdd:web`
 
-    - builds and opens webpage via [webpack-serve](https://github.com/webpack-contrib/webpack-serve) that runs mocha tests in browser
+    - builds and opens webpage via [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) that runs mocha tests in browser
     - rebuilds and re-runs tests if any relevant files change
     - Runs webpack with `eval` style source mapping to allow debugging of actual generated code.
 
@@ -92,7 +100,7 @@ The provided `npm` commands will watch your source and automatically reload your
 
 - `npm start`
 
-    - builds your app in development mode and automatically serves it using [webpack-serve](https://github.com/webpack-contrib/webpack-serve)	 and the template in `src/templates/index.html`
+    - builds your app in development mode and automatically serves it using [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) and the template in `src/templates/index.html`
     - hot-reloading is enabled to automatically rebuild and reload if any source file changes
 
 - `npm run stats`
@@ -109,7 +117,7 @@ The provided `npm` commands will watch your source and automatically reload your
 1. Clone the repository into your "new-project" directory
 
     ```bash
-    git clone https://github.com/ctaylo21/JumpStart.git new-project && cd new-project
+    git clone https://github.com/ctaylo21/ModernJSProjectBoilerplate.git new-project && cd new-project
     ```
 
 2. Remove the git repository, and then initialize a new one
@@ -136,4 +144,4 @@ The provided `npm` commands will watch your source and automatically reload your
 
 ## Support
 
-If you find any problems or bugs, please open a new [issue](https://github.com/ctaylo21/JumpStart/issues).
+If you find any problems or bugs, please open a new [issue](https://github.com/ctaylo21/ModernJSProjectBoilerplate/issues).
