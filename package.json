@@ -1,10 +1,10 @@
 {
-  "name": "jumpstart",
+  "name": "modern_js_project_boilerplate",
   "version": "1.0.0",
-  "description": "ES6 module starter kit with Webpack, Eslint, Babel, Mocha, Chai, Sinon, Sass, and Istanbul",
+  "description": "ES6 boilerplate with Webpack, Eslint, Babel, Mocha, Chai, Sinon, Sass, and Istanbul",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ctaylo21/JumpStart.git"
+    "url": "https://github.com/ctaylo21/ModernJSProjectBoilerplate.git"
   },
   "keywords": [
     "es6",
