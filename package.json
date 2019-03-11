@@ -1,6 +1,6 @@
 {
   "name": "modern_js_project_boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ES6 boilerplate with Webpack, Eslint, Babel, Mocha, Chai, Sinon, Sass, and Istanbul",
   "repository": {
     "type": "git",
