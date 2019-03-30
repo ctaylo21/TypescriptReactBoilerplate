@@ -3,36 +3,30 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 1.0.0 - 2019-03-30
-
+## 1.0.2 - 2019-03-11
 ### Changed
+- Add prettier options to package.json
 
-- Switched from standardJS to eslint
-- Added automated linting on commit via lint-staged & husky
+## 1.0.1 - 2019-03-11
+### Changed
+- Updated NPM dependencies
 
 ## 1.0.0 - 2019-01-11
-
 ### Changed
-
 - Switched from standardJS to eslint
 - Added automated linting on commit via lint-staged & husky
 
 ## 0.0.7 - 2019-01-11
-
 ### Changed
-
 - Switched from regenerator-runtime to @babel/plugin-transform-runtime for async support
 
 ## 0.0.6 - 2019-01-09
-
 - Internal changes (incremented dependency versions)
 
 ## 0.0.5 - 2019-01-09
-
 ### Changed
-
 - Switched from webpack-serve to webpack-dev-server
 
 ## 0.0.4 - 2019-01-09
-
 - Internal changes (incremented dependency versions)
+
