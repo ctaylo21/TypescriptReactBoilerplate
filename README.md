@@ -15,6 +15,11 @@
     <img src="https://david-dm.org/ctaylo21/TypescriptReactBoilerplate/dev-status.svg"/>
   </a>
 
+  <!-- Prettier -->
+  <a href="https://github.com/prettier/prettie" title="Prettier">
+    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"/>
+  </a>
+
 </div>
 
 <h1 align="center">Typescript React Project Boilerplate</h1>
