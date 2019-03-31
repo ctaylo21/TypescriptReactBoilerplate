@@ -1,6 +1,6 @@
 {
   "name": "typescriptreactboilerplate",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Typescript & React boilerplate with Webpack, Eslint, Prettier, and Jest",
   "repository": {
     "type": "git",
@@ -66,6 +66,8 @@
     "prettier": "^1.16.4",
     "react-test-renderer": "^16.8.6",
     "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.3",
     "ts-jest": "^24.0.1",
     "ts-loader": "^5.3.3",
     "typescript": "^3.4.1",

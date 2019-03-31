@@ -6,9 +6,9 @@ export interface HelloProps {
 }
 
 const Hello = ({ compiler, framework }: HelloProps): React.ReactElement => (
-  <h1>
+  <h2>
     Hello from {compiler} and {framework}!
-  </h1>
+  </h2>
 );
 
 export default Hello;

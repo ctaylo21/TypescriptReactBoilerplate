@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hello renders correctly 1`] = `
-<h1>
+<h2>
   Hello from 
   newCompiler
    and 
   react
   !
-</h1>
+</h2>
 `;
