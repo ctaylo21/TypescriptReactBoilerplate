@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SubjectToBeTested renders correctly 1`] = `
+exports[`Hello renders correctly 1`] = `
 <h1>
   Hello from 
   newCompiler

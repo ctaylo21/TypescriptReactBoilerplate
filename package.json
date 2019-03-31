@@ -1,10 +1,10 @@
 {
-  "name": "tsreactboilerplate",
+  "name": "typescriptreactboilerplate",
   "version": "2.0.0",
   "description": "Typescript & React boilerplate with Webpack, Eslint, Prettier, and Jest",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ctaylo21/JumpStart.git"
+    "url": "https://github.com/ctaylo21/TypescriptReactBoilerplate.git"
   },
   "keywords": [
     "typescript",

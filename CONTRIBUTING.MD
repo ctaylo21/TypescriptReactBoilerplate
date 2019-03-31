@@ -1,4 +1,4 @@
-# Contributing to TsReactBoilerplate
+# Contributing to TypescriptReactBoilerplate
 
 Want to contribute? Great! Here's a quick guide to get started.
 
