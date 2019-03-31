@@ -17,6 +17,20 @@
   "author": "Caleb Taylor <caleb89taylor@gmail.com>",
   "license": "MIT",
   "main": "dist/main.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ],
+    "*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "scripts": {
     "start": "webpack-dev-server --open --mode=development",
     "build": "webpack --mode=production",
