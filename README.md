@@ -63,7 +63,7 @@ All the best practices for a project should be available from the beginning of y
 
 Some examples of these feature include:
 
-- Automated linting & code fixing of committed files using git hooks via [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). This ensures all commited code matches standards set by [eslint](https://eslint.org/) and[prettier](https://github.com/prettier/prettier).
+- Automated linting & code fixing of committed files using git hooks via [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). This ensures all commited code matches standards set by [eslint](https://eslint.org/) and [prettier](https://github.com/prettier/prettier).
 - Hot reloading of source code for both tests and application code via [webpack](https://webpack.js.org/) and [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 - Standardized commit messages via [commitizen](https://github.com/commitizen/cz-cli)
 
