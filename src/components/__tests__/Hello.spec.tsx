@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import Hello from '../Hello';
 
-it('Hello renders correctly', () => {
+it('Hello renders correctly', (): void => {
   const props = {
     compiler: 'newCompiler',
     framework: 'react',
