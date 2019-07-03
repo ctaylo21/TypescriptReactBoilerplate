@@ -49,6 +49,7 @@
 - **isomorphic**: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
 - **compatible**: write cutting-edge [Typescript](https://www.typescriptlang.org/) and it will compile it to a version that older browsers support
 - **consistent**: uses [eslint](https://eslint.org/) and [prettier](https://github.com/prettier/prettier) to enforce code standards, and [commitzen](https://github.com/commitizen/cz-cli) to enforce `git commit` standards
+- **fast**: optimized builds by forking of type-checking with [fork-ts-check-webpack-plugin](https://www.npmjs.com/package/fork-ts-checker-webpack-plugin) and lightning-fast rebuilds in `watch` mode via Typescript's incremental compilation mode
 
 ## Philosophy
 
@@ -89,6 +90,7 @@ Some examples of these feature include:
 
   - builds your app in development mode and automatically serves it using [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) and the template in `src/templates/index.html`
   - hot-reloading is enabled to automatically rebuild and reload if any source file changes
+  - subsequent builds optimized with Typescript's `--incremental` flag enabled in [ts-loader](https://www.npmjs.com/package/ts-loader) and [fork-ts-checker-webpack-plugin](https://www.npmjs.com/package/fork-ts-checker-webpack-plugin)
 
 - `npm run cm`
 

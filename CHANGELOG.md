@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.1.3 - 2019-07-03
+
+### Updated
+
+- Webpack build now forks type checking into separate process
+- Webpack build now uses incremental build feature during watch mode
+
+## 2.1.2 - 2019-07-03
+
+### Updated
+
+- Build dependencies
+
 ## 2.1.1 - 2019-05-09
 
 ### Updated
