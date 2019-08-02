@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
-import Hello from '../Hello';
+import Hello from '../';
 
 it('Hello renders correctly', (): void => {
   const props = {

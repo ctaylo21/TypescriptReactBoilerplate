@@ -2,7 +2,8 @@
 
 exports[`Hello renders correctly 1`] = `
 <h2>
-  Hello from 
+  Hello
+   from 
   newCompiler
    and 
   react
