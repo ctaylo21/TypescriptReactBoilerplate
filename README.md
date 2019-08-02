@@ -17,7 +17,7 @@
 
   <!-- Coveralls -->
   <a href='https://coveralls.io/github/ctaylo21/TypescriptReactBoilerplate?branch=master'>
-    <img src='https://coveralls.io/repos/github/ctaylo21/TypescriptReactBoilerplate/badge.svg?branch=master' alt='Coverage Status' />
+    <img src='https://coveralls.io/repos/github/ctaylo21/TypescriptReactBoilerplate/badge.svg?branch=master' alt='coverage status' />
   </a>
 
   <!-- Prettier -->
