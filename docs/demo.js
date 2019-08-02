@@ -23836,6 +23836,21 @@
 
 	var Title = function () { return react.createElement(react.Fragment, null, "Hello"); };
 
+	function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+	var _ref =
+	/*#__PURE__*/
+	react.createElement("path", {
+	  d: "M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.507 13.941c-1.512 1.195-3.174 1.931-5.506 1.931-2.334 0-3.996-.736-5.508-1.931L6 14.434C7.127 16.154 9.2 18 12.001 18c2.8 0 4.872-1.846 5.999-3.566l-.493-.493zM8.5 8a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm7 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+	});
+
+	var SvgSmiley = function SvgSmiley(props) {
+	  return react.createElement("svg", _extends({
+	    width: 24,
+	    height: 24
+	  }, props), _ref);
+	};
+
 	var Hello = function (_a) {
 	    var compiler = _a.compiler, framework = _a.framework;
 	    return (react.createElement("h2", null,
@@ -23844,7 +23859,8 @@
 	        compiler,
 	        " and ",
 	        framework,
-	        "!"));
+	        "!",
+	        react.createElement(SvgSmiley, null)));
 	};
 
 	reactDom.render(react.createElement(Hello, { compiler: "TypeScript", framework: "React" }), document.getElementById('root'));

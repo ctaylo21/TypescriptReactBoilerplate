@@ -49,7 +49,7 @@
 - **compliant**: Uses [rollup.js](https://rollupjs.org/guide/en/) to build your NPM module in multiple formats (ESM and CJS) to support all major use cases for NPM.
 - **testable**: built for TDD with hot-reloading, code coverage, snapshots, and more with [Jest](https://jestjs.io/).
 - **isomorphic**: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
-- **compatible**: write cutting-edge [Typescript](https://www.typescriptlang.org/) and it will compile it to a version that older browsers support
+- **compatible**: write cutting-edge [Typescript](https://www.typescriptlang.org/) and it will compile it to a version that older browsers support. Supports loading of `.svg` files as React components using rollup.
 - **consistent**: uses [eslint](https://eslint.org/) and [prettier](https://github.com/prettier/prettier) to automatically enforce code standards via git hooks using [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged), and [commitzen](https://github.com/commitizen/cz-cli) to enforce `git commit` standards
 - **continuous**: uses [Travis CI](https://travis-ci.org/) and [Coveralls](https://coveralls.io/) to create an CI pipeline that builds your code on merges to master, runs tests, and reports on code coverage.
 
@@ -73,8 +73,8 @@
 - `npm start`
 
   - Uses the `src/demo.tsx` file to build a "demo" implementation of your module. You can customize `src/demo.tsx` as needed.
-  - Builds your module in `watch` mode and serves your demo app at http://localhost:10001/
-  - Runs rollup in watch mode so any changes to your source code will trigger a rebuild of your bundle
+  - Serves your demo app at http://localhost:10001/
+  - Runs rollup in watch mode, so any changes to your source code will trigger a rebuild of your bundle
     - **Note**: Bundle changes still require a reload of the browser page
 
 - `npm run cm`
