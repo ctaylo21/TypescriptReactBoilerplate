@@ -1,13 +1,15 @@
 # Depdency directory
 node_modules
 
-# Code coverage for Istanbul
-coverage
-.nyc_output
-
 # Webpack compiled bundle directory
 dist
 
 # Tern files
 .tern-port
 .tern-project
+
+# coverage folder
+coverage
+
+# Coveralls
+.coveralls.yml

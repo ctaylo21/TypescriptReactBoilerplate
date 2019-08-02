@@ -1,10 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Title from './components/Title';
 import './styles/app.scss';
+import Smile from './images/smiley.svg';
+export interface HelloProps {
+  compiler: string;
+  framework: string;
+}
 
-import Hello from './components/Hello';
-
-ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
-  document.getElementById('root'),
+const Hello = ({ compiler, framework }: HelloProps): React.ReactElement => (
+  <h2>
+    <Title /> from {compiler} and {framework}!
+    <Smile />
+  </h2>
 );
+
+export default Hello;

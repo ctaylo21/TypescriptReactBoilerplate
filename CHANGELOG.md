@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.0 - 2019-08-02
+
+### Updated
+
+- Switch from Webpack to Rollup
+- Updates to tsconfig and .jest.config.js
+
+### Added
+
+- Documentation on adding Travis-CI and Coveralls to setup
+- Documentation on demo of your app with github pages
+
 ## 2.1.3 - 2019-07-03
 
 ### Updated
