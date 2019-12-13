@@ -6280,7 +6280,6 @@
 	var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
 	var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
 	var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-	var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
 
 	var MAYBE_ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
 	var FAUX_ITERATOR_SYMBOL = '@@iterator';
@@ -6421,7 +6420,6 @@
 	    // and it is guaranteed to be the work-in-progress version.
 	    return getStackByFiberInDevAndProd(current);
 	  }
-	  return '';
 	}
 
 	function resetCurrentFiber() {
@@ -10022,58 +10020,6 @@
 	  node.textContent = text;
 	};
 
-	// List derived from Gecko source code:
-	// https://github.com/mozilla/gecko-dev/blob/4e638efc71/layout/style/test/property_database.js
-	var shorthandToLonghand = {
-	  animation: ['animationDelay', 'animationDirection', 'animationDuration', 'animationFillMode', 'animationIterationCount', 'animationName', 'animationPlayState', 'animationTimingFunction'],
-	  background: ['backgroundAttachment', 'backgroundClip', 'backgroundColor', 'backgroundImage', 'backgroundOrigin', 'backgroundPositionX', 'backgroundPositionY', 'backgroundRepeat', 'backgroundSize'],
-	  backgroundPosition: ['backgroundPositionX', 'backgroundPositionY'],
-	  border: ['borderBottomColor', 'borderBottomStyle', 'borderBottomWidth', 'borderImageOutset', 'borderImageRepeat', 'borderImageSlice', 'borderImageSource', 'borderImageWidth', 'borderLeftColor', 'borderLeftStyle', 'borderLeftWidth', 'borderRightColor', 'borderRightStyle', 'borderRightWidth', 'borderTopColor', 'borderTopStyle', 'borderTopWidth'],
-	  borderBlockEnd: ['borderBlockEndColor', 'borderBlockEndStyle', 'borderBlockEndWidth'],
-	  borderBlockStart: ['borderBlockStartColor', 'borderBlockStartStyle', 'borderBlockStartWidth'],
-	  borderBottom: ['borderBottomColor', 'borderBottomStyle', 'borderBottomWidth'],
-	  borderColor: ['borderBottomColor', 'borderLeftColor', 'borderRightColor', 'borderTopColor'],
-	  borderImage: ['borderImageOutset', 'borderImageRepeat', 'borderImageSlice', 'borderImageSource', 'borderImageWidth'],
-	  borderInlineEnd: ['borderInlineEndColor', 'borderInlineEndStyle', 'borderInlineEndWidth'],
-	  borderInlineStart: ['borderInlineStartColor', 'borderInlineStartStyle', 'borderInlineStartWidth'],
-	  borderLeft: ['borderLeftColor', 'borderLeftStyle', 'borderLeftWidth'],
-	  borderRadius: ['borderBottomLeftRadius', 'borderBottomRightRadius', 'borderTopLeftRadius', 'borderTopRightRadius'],
-	  borderRight: ['borderRightColor', 'borderRightStyle', 'borderRightWidth'],
-	  borderStyle: ['borderBottomStyle', 'borderLeftStyle', 'borderRightStyle', 'borderTopStyle'],
-	  borderTop: ['borderTopColor', 'borderTopStyle', 'borderTopWidth'],
-	  borderWidth: ['borderBottomWidth', 'borderLeftWidth', 'borderRightWidth', 'borderTopWidth'],
-	  columnRule: ['columnRuleColor', 'columnRuleStyle', 'columnRuleWidth'],
-	  columns: ['columnCount', 'columnWidth'],
-	  flex: ['flexBasis', 'flexGrow', 'flexShrink'],
-	  flexFlow: ['flexDirection', 'flexWrap'],
-	  font: ['fontFamily', 'fontFeatureSettings', 'fontKerning', 'fontLanguageOverride', 'fontSize', 'fontSizeAdjust', 'fontStretch', 'fontStyle', 'fontVariant', 'fontVariantAlternates', 'fontVariantCaps', 'fontVariantEastAsian', 'fontVariantLigatures', 'fontVariantNumeric', 'fontVariantPosition', 'fontWeight', 'lineHeight'],
-	  fontVariant: ['fontVariantAlternates', 'fontVariantCaps', 'fontVariantEastAsian', 'fontVariantLigatures', 'fontVariantNumeric', 'fontVariantPosition'],
-	  gap: ['columnGap', 'rowGap'],
-	  grid: ['gridAutoColumns', 'gridAutoFlow', 'gridAutoRows', 'gridTemplateAreas', 'gridTemplateColumns', 'gridTemplateRows'],
-	  gridArea: ['gridColumnEnd', 'gridColumnStart', 'gridRowEnd', 'gridRowStart'],
-	  gridColumn: ['gridColumnEnd', 'gridColumnStart'],
-	  gridColumnGap: ['columnGap'],
-	  gridGap: ['columnGap', 'rowGap'],
-	  gridRow: ['gridRowEnd', 'gridRowStart'],
-	  gridRowGap: ['rowGap'],
-	  gridTemplate: ['gridTemplateAreas', 'gridTemplateColumns', 'gridTemplateRows'],
-	  listStyle: ['listStyleImage', 'listStylePosition', 'listStyleType'],
-	  margin: ['marginBottom', 'marginLeft', 'marginRight', 'marginTop'],
-	  marker: ['markerEnd', 'markerMid', 'markerStart'],
-	  mask: ['maskClip', 'maskComposite', 'maskImage', 'maskMode', 'maskOrigin', 'maskPositionX', 'maskPositionY', 'maskRepeat', 'maskSize'],
-	  maskPosition: ['maskPositionX', 'maskPositionY'],
-	  outline: ['outlineColor', 'outlineStyle', 'outlineWidth'],
-	  overflow: ['overflowX', 'overflowY'],
-	  padding: ['paddingBottom', 'paddingLeft', 'paddingRight', 'paddingTop'],
-	  placeContent: ['alignContent', 'justifyContent'],
-	  placeItems: ['alignItems', 'justifyItems'],
-	  placeSelf: ['alignSelf', 'justifySelf'],
-	  textDecoration: ['textDecorationColor', 'textDecorationLine', 'textDecorationStyle'],
-	  textEmphasis: ['textEmphasisColor', 'textEmphasisStyle'],
-	  transition: ['transitionDelay', 'transitionDuration', 'transitionProperty', 'transitionTimingFunction'],
-	  wordWrap: ['overflowWrap']
-	};
-
 	/**
 	 * CSS properties which accept numbers but are not in units of "px".
 	 */
@@ -10354,29 +10300,6 @@
 	  }
 	}
 
-	function isValueEmpty(value) {
-	  return value == null || typeof value === 'boolean' || value === '';
-	}
-
-	/**
-	 * Given {color: 'red', overflow: 'hidden'} returns {
-	 *   color: 'color',
-	 *   overflowX: 'overflow',
-	 *   overflowY: 'overflow',
-	 * }. This can be read as "the overflowY property was set by the overflow
-	 * shorthand". That is, the values are the property that each was derived from.
-	 */
-	function expandShorthandMap(styles) {
-	  var expanded = {};
-	  for (var key in styles) {
-	    var longhands = shorthandToLonghand[key] || [key];
-	    for (var i = 0; i < longhands.length; i++) {
-	      expanded[longhands[i]] = key;
-	    }
-	  }
-	  return expanded;
-	}
-
 	/**
 	 * When mixing shorthand and longhand property names, we warn during updates if
 	 * we expect an incorrect result to occur. In particular, we warn for:
@@ -10394,26 +10317,6 @@
 	function validateShorthandPropertyCollisionInDev(styleUpdates, nextStyles) {
 	  {
 	    return;
-	  }
-
-	  if (!nextStyles) {
-	    return;
-	  }
-
-	  var expandedUpdates = expandShorthandMap(styleUpdates);
-	  var expandedStyles = expandShorthandMap(nextStyles);
-	  var warnedAbout = {};
-	  for (var key in expandedUpdates) {
-	    var originalKey = expandedUpdates[key];
-	    var correctOriginalKey = expandedStyles[key];
-	    if (correctOriginalKey && originalKey !== correctOriginalKey) {
-	      var warningKey = originalKey + ',' + correctOriginalKey;
-	      if (warnedAbout[warningKey]) {
-	        continue;
-	      }
-	      warnedAbout[warningKey] = true;
-	      warning$1(false, '%s a style property during rerender (%s) when a ' + 'conflicting property is set (%s) can lead to styling bugs. To ' + "avoid this, don't mix shorthand and non-shorthand properties " + 'for the same value; instead, replace the shorthand with ' + 'separate values.', isValueEmpty(styleUpdates[originalKey]) ? 'Removing' : 'Updating', originalKey, correctOriginalKey);
-	    }
 	  }
 	}
 
@@ -11925,7 +11828,6 @@
 	    }
 	    return possibleStandardNames[lowerCasedName] || null;
 	  }
-	  return null;
 	}
 
 	function diffHydratedProperties(domElement, tag, rawProps, parentNamespace, rootContainerElement) {
@@ -12596,7 +12498,6 @@
 	    var _ancestorInfo = updatedAncestorInfo(null, validatedTag);
 	    return { namespace: namespace, ancestorInfo: _ancestorInfo };
 	  }
-	  return namespace;
 	}
 
 	function getChildHostContext(parentHostContext, type, rootContainerInstance) {
@@ -12606,8 +12507,6 @@
 	    var _ancestorInfo2 = updatedAncestorInfo(parentHostContextDev.ancestorInfo, type);
 	    return { namespace: _namespace, ancestorInfo: _ancestorInfo2 };
 	  }
-	  var parentNamespace = parentHostContext;
-	  return getChildNamespace(parentNamespace, type);
 	}
 
 	function getPublicInstance(instance) {
@@ -14413,8 +14312,6 @@
 	      case ForwardRef:
 	        candidateType = type.render;
 	        break;
-	      default:
-	        break;
 	    }
 
 	    if (resolveFamily === null) {
@@ -14482,8 +14379,6 @@
 	        break;
 	      case ForwardRef:
 	        candidateType = type.render;
-	        break;
-	      default:
 	        break;
 	    }
 
@@ -16573,8 +16468,6 @@
 	            break;
 	          }
 	          warning$1(false, 'Encountered two children with the same key, `%s`. ' + 'Keys should be unique so that components maintain their identity ' + 'across updates. Non-unique keys may cause children to be ' + 'duplicated and/or omitted — the behavior is unsupported and ' + 'could change in a future version.', key);
-	          break;
-	        default:
 	          break;
 	      }
 	    }
@@ -18782,9 +18675,6 @@
 	              var text = fiber.pendingProps;
 	              didNotFindHydratableContainerTextInstance(parentContainer, text);
 	              break;
-	            case SuspenseComponent:
-	              
-	              break;
 	          }
 	          break;
 	        }
@@ -20735,10 +20625,6 @@
 	      {
 	        return updateSuspenseListComponent(current$$1, workInProgress, renderExpirationTime);
 	      }
-	    case FundamentalComponent:
-	      {
-	        break;
-	      }
 	  }
 	  (function () {
 	    {
@@ -21437,8 +21323,6 @@
 	    case ContextProvider:
 	      popProvider(interruptedWork);
 	      break;
-	    default:
-	      break;
 	  }
 	}
 
@@ -21706,8 +21590,6 @@
 	          commitHookEffectList(NoEffect$1, MountPassive, finishedWork);
 	          break;
 	        }
-	      default:
-	        break;
 	    }
 	  }
 	}
@@ -21997,8 +21879,6 @@
 	        }
 	        return;
 	      }
-	    case FundamentalComponent:
-
 	  }
 	}
 
@@ -22140,7 +22020,6 @@
 	      isContainer = true;
 	      break;
 	    case FundamentalComponent:
-
 	    // eslint-disable-next-line-no-fallthrough
 	    default:
 	      (function () {
@@ -22235,8 +22114,6 @@
 	            currentParent = parentStateNode.containerInfo;
 	            currentParentIsContainer = true;
 	            break findParent;
-	          case FundamentalComponent:
-
 	        }
 	        parent = parent.return;
 	      }
@@ -22706,8 +22583,6 @@
 	          enqueueCapturedUpdate(workInProgress, _update2);
 	          return;
 	        }
-	        break;
-	      default:
 	        break;
 	    }
 	    workInProgress = workInProgress.return;
@@ -24849,8 +24724,6 @@
 	                }
 	              }
 	              break;
-	            default:
-	              break;
 	          }
 	        }
 	        workInProgressNode = workInProgressNode.return;
@@ -25322,8 +25195,6 @@
 	      case ForwardRef:
 	        workInProgress.type = resolveForwardRefForHotReloading(current.type);
 	        break;
-	      default:
-	        break;
 	    }
 	  }
 
@@ -25480,8 +25351,6 @@
 	                fiberTag = LazyComponent;
 	                resolvedType = null;
 	                break getTag;
-	              case REACT_FUNDAMENTAL_TYPE:
-	                break;
 	            }
 	          }
 	          var info = '';
@@ -25777,34 +25646,6 @@
 	  return scheduleRootUpdate(current$$1, element, expirationTime, suspenseConfig, callback);
 	}
 
-	function findHostInstance(component) {
-	  var fiber = get(component);
-	  if (fiber === undefined) {
-	    if (typeof component.render === 'function') {
-	      (function () {
-	        {
-	          {
-	            throw ReactError(Error('Unable to find node on an unmounted component.'));
-	          }
-	        }
-	      })();
-	    } else {
-	      (function () {
-	        {
-	          {
-	            throw ReactError(Error('Argument appears to not be a ReactComponent. Keys: ' + Object.keys(component)));
-	          }
-	        }
-	      })();
-	    }
-	  }
-	  var hostFiber = findCurrentHostFiber(fiber);
-	  if (hostFiber === null) {
-	    return null;
-	  }
-	  return hostFiber.stateNode;
-	}
-
 	function findHostInstanceWithWarning(component, methodName) {
 	  {
 	    var fiber = get(component);
@@ -25844,7 +25685,6 @@
 	    }
 	    return hostFiber.stateNode;
 	  }
-	  return findHostInstance(component);
 	}
 
 	function createContainer(containerInfo, tag, hydrate) {
@@ -26433,7 +26273,6 @@
 	    {
 	      return findHostInstanceWithWarning(componentOrElement, 'findDOMNode');
 	    }
-	    return findHostInstance(componentOrElement);
 	  },
 	  hydrate: function (element, container, callback) {
 	    (function () {
@@ -26646,7 +26485,7 @@
 	var _ref =
 	/*#__PURE__*/
 	react.createElement("path", {
-	  d: "M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.507 13.941c-1.512 1.195-3.174 1.931-5.506 1.931-2.334 0-3.996-.736-5.508-1.931L6 14.434C7.127 16.154 9.2 18 12.001 18c2.8 0 4.872-1.846 5.999-3.566l-.493-.493zM8.5 8a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm7 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+	  d: "M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.507 13.941c-1.512 1.195-3.174 1.931-5.506 1.931-2.334 0-3.996-.736-5.508-1.931L6 14.434C7.127 16.154 9.2 18 12.001 18c2.8 0 4.872-1.846 5.999-3.566l-.493-.493zM8.5 8a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm7 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"
 	});
 
 	var SvgSmiley = function SvgSmiley(props) {
