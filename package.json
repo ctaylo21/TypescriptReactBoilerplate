@@ -1,6 +1,6 @@
 {
   "name": "typescriptreactboilerplate",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Typescript & React boilerplate with Rollup, Eslint, Prettier, and Jest",
   "repository": {
     "type": "git",
