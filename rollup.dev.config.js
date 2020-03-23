@@ -6,7 +6,7 @@ import typescript from 'rollup-plugin-typescript2';
 
 import { getBasePlugins } from './rollup.config';
 
-export default commandLineArgs => {
+export default (commandLineArgs) => {
   const targetFolder = commandLineArgs.configDocBuild ? 'docs' : 'dist';
   const config = {
     input: 'src/demo.tsx',
