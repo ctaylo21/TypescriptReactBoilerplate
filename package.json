@@ -38,8 +38,7 @@
       "npm run lint"
     ],
     "*.{js,jsx,ts,tsx,json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "scripts": {
