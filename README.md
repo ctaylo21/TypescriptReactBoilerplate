@@ -20,11 +20,6 @@
     <img src='https://coveralls.io/repos/github/ctaylo21/TypescriptReactBoilerplate/badge.svg?branch=master' alt='coverage status' />
   </a>
 
-  <!-- Prettier -->
-  <a href="https://github.com/prettier/prettie" title="Prettier">
-    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"/>
-  </a>
-
 </div>
 
 <h1 align="center">Typescript & React NPM Module Boilerplate</h1>
@@ -50,7 +45,7 @@
 - **testable**: built for TDD with hot-reloading, code coverage, snapshots, and more with [Jest](https://jestjs.io/).
 - **isomorphic**: supports testing in both node and browsers with [jsdom](https://github.com/tmpvar/jsdom) for DOM emulation in tests
 - **compatible**: write cutting-edge [Typescript](https://www.typescriptlang.org/) and it will compile it to a version that older browsers support. Supports loading of `.svg` files as React components using rollup.
-- **consistent**: uses [eslint](https://eslint.org/) and [prettier](https://github.com/prettier/prettier) to automatically enforce code standards via git hooks using [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged), and [commitzen](https://github.com/commitizen/cz-cli) to enforce `git commit` standards
+- **consistent**: uses [eslint](https://eslint.org/) to automatically enforce code standards via git hooks using [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged), and [commitzen](https://github.com/commitizen/cz-cli) to enforce `git commit` standards
 - **continuous**: uses [Travis CI](https://travis-ci.org/) and [Coveralls](https://coveralls.io/) to create an CI pipeline that builds your code on merges to master, runs tests, and reports on code coverage.
 
 ## Usage

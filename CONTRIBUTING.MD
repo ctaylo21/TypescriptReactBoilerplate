@@ -54,4 +54,4 @@ If you have an issue, please [open a new issue](https://github.com/ctaylo21/Type
 
 ## Code Standards
 
-All code written should conform to [eslint](https://eslint.org/) and [prettier](https://prettier.io/). No errors should be present after running `npm run lint`. All commited `js,jsx,ts,tsx,json,md` files are automatically linted on commits to ensure they adhere to project standards.
+All code written should conform to [eslint](https://eslint.org/) rules. No errors should be present after running `npm run lint`. All commited `js,jsx,ts,tsx,json,md` files are automatically linted on commits to ensure they adhere to project standards.

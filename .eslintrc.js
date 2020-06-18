@@ -6,8 +6,6 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
   ],
   parserOptions: {
     ecmaVersion: 2018,
@@ -23,17 +21,18 @@ module.exports = {
   },
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
-    'react/prop-types': false,
+    'react/prop-types': 0,
     '@typescript-eslint/prefer-interface': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    'react/prop-types': 'off',
+    "arrow-body-style": [2, "as-needed"],
+    quotes: ["error", "single", { "allowTemplateLiterals": true }]
   },
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.js'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': ['error'],
+        '@typescript-eslint/explicit-function-return-type': [0],
+        '@typescript-eslint/explicit-module-boundary-types': [0],
       },
     },
   ],
